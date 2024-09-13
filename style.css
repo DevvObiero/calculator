@@ -71,4 +71,7 @@
     width: 145px;
  }
 
- form input#opera
+ form input#operator{
+    color: #e3f9ff;
+ }
+

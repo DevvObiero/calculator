@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -50,6 +50,65 @@
         </div>
        
             
+        </div>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATORR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+<div class="container">
+
+<div class="calculator">
+    <form>
+        <div class="display">
+            <input type="text" name="display">
+        </div>
+        <div>
+            <input id="operator"  class="calc-key"  onclick="display.value = '' "  type="button"  value="AC"/>
+            <input id="operator" class="calc-key" onclick="display.value = display.value.toString().slice(0,-1)" type="button"  value="DE"/>
+            <input id="operator" class="calc-key" onclick="display.value += '.'"  type="button" value="."/>
+            <input id="operator" class="calc-key" onclick="display.value += '/' "type="button" value="/"/>
+        </div>
+        <div>
+            <input class="calc-key" onclick="display.value += '7' " type="button" value="7"/>
+            <input class="calc-key" onclick="display.value += '8' " type="button" value="8"/>
+            <input class="calc-key" onclick="display.value += '9' " type="button" value="9"/>
+            <input id="operator"  class="calc-key" onclick="display.value += 'x' " type="button" value="x"/>
+        </div>
+        <div>
+            <input class="calc-key" onclick="display.value += '4' "  type="button" value="4"/>
+            <input class="calc-key" onclick="display.value += '5' " type="button" value="5"/>
+            <input class="calc-key" onclick="display.value += '6' " type="button" value="6"/>
+            <input id="operator"  class="calc-key" onclick="display.value += '-' " type="button" value="-"/>
+        </div>
+        <div>
+            <input class="calc-key" onclick="display.value += '1' " type="button" value="1"/>
+            <input class="calc-key" onclick="display.value += '2' " type="button" value="2"/>
+            <input class="calc-key" onclick="display.value += '3' " type="button" value="3"/>
+            <input id="operator"  class="calc-key" onclick="display.value += '+' " type="button" value="+"/>
+        </div>
+        <div>
+            <input class="calc-key" onclick="display.value += '00' " type="button" value="00"/>
+            <input class="calc-key" onclick="display.value += '0'  " type="button" value="0"/>
+            <input id="equal" class="calc-key redd" onclick="calculate()"  type="button" value="="></input>
+        </div>
+            
+    </div>
         </div>
     </form>
 </div>
